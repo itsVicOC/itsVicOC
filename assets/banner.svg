@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">itsVicOC - Build, Play, Ship</title>
+  <desc id="desc">A pixel-inspired anime coder at a terminal surrounded by game and code motifs</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#171923"/>
+      <stop offset="0.55" stop-color="#24263a"/>
+      <stop offset="1" stop-color="#163a43"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#253149"/>
+      <stop offset="1" stop-color="#182331"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity=".035"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="320" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="18" fill="url(#grid)"/>
+  <path d="M0 262C190 212 338 301 532 255S882 189 1200 246V320H0Z" fill="#0f131d" fill-opacity=".62"/>
+
+  <!-- Decorative code constellations -->
+  <g fill="#70d6c9" opacity=".75">
+    <rect x="54" y="48" width="5" height="5"/><rect x="88" y="77" width="4" height="4"/>
+    <rect x="564" y="55" width="4" height="4"/><rect x="613" y="89" width="5" height="5"/>
+    <rect x="1112" y="50" width="5" height="5"/><rect x="1150" y="89" width="4" height="4"/>
+  </g>
+  <g stroke="#70d6c9" stroke-width="3" stroke-linecap="square" fill="none" opacity=".55">
+    <path d="M72 111l-13 12 13 12M103 111l13 12-13 12"/>
+    <path d="M1120 126h28m-14-14v28"/>
+  </g>
+  <g fill="#f4d35e" filter="url(#glow)">
+    <path d="M530 73h5v5h5v5h-5v5h-5v-5h-5v-5h5Z"/>
+    <path d="M1084 65h4v4h4v4h-4v4h-4v-4h-4v-4h4Z"/>
+  </g>
+
+  <!-- Main identity -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">
+    <text x="92" y="142" fill="#f7f7fb" font-size="68" font-weight="800" letter-spacing="1">itsVicOC</text>
+    <text x="96" y="183" fill="#70d6c9" font-size="21" font-weight="700" letter-spacing="5">BUILD · PLAY · SHIP</text>
+    <rect x="96" y="211" width="340" height="40" rx="7" fill="#111620" stroke="#3b4057"/>
+    <circle cx="117" cy="231" r="5" fill="#ef6f6c"/>
+    <circle cx="135" cy="231" r="5" fill="#f4d35e"/>
+    <circle cx="153" cy="231" r="5" fill="#70d6c9"/>
+    <text x="175" y="238" fill="#c9d1df" font-size="17">ideas --build --playable</text>
+  </g>
+
+  <!-- Pixel desk -->
+  <rect x="717" y="245" width="380" height="14" rx="3" fill="#d09a78"/>
+  <rect x="751" y="259" width="14" height="45" fill="#8f6655"/>
+  <rect x="1053" y="259" width="14" height="45" fill="#8f6655"/>
+
+  <!-- Monitor -->
+  <rect x="886" y="125" width="173" height="116" rx="8" fill="#30364a" stroke="#59617c" stroke-width="4"/>
+  <rect x="899" y="138" width="147" height="86" rx="3" fill="url(#screen)"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">
+    <text x="913" y="159" fill="#ef6f6c">const</text>
+    <text x="953" y="159" fill="#f7f7fb">idea</text>
+    <text x="986" y="159" fill="#70d6c9">=</text>
+    <text x="1000" y="159" fill="#f4d35e">"fun"</text>
+    <text x="913" y="181" fill="#70d6c9">while</text>
+    <text x="954" y="181" fill="#c9d1df">(curious) {</text>
+    <text x="927" y="203" fill="#8fa8cf">ship();</text>
+    <text x="913" y="217" fill="#c9d1df">}</text>
+  </g>
+  <rect x="961" y="241" width="22" height="13" fill="#59617c"/>
+  <rect x="938" y="252" width="68" height="7" rx="3" fill="#59617c"/>
+
+  <!-- Original chibi coder, anime-inspired -->
+  <g>
+    <!-- chair -->
+    <path d="M707 199h72v92h-18v-47h-54Z" fill="#39425d"/>
+    <rect x="711" y="283" width="62" height="8" rx="4" fill="#59617c"/>
+    <circle cx="718" cy="298" r="7" fill="#252a3b"/><circle cx="767" cy="298" r="7" fill="#252a3b"/>
+
+    <!-- hair and cat-ear headset silhouette -->
+    <path d="M729 83l15-31 17 23c14-5 31-5 45 1l19-24 12 35c15 17 20 41 14 64-7 28-28 52-61 54-36 2-65-25-67-61-2-24 1-43 6-61Z" fill="#25283b"/>
+    <path d="M744 76l4-14 9 13M807 77l14-15 2 24" fill="none" stroke="#ef6f6c" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M726 110c-12 29-7 66 17 84 25 19 69 12 88-18 13-21 15-51 2-71-23-26-82-23-107 5Z" fill="#f1c7ac"/>
+    <path d="M723 121c17-34 91-51 118-10-11-31-35-47-63-46-28 0-52 21-55 56Z" fill="#303348"/>
+    <path d="M726 120c20 2 34-5 48-19-1 13-8 24-20 32 23-5 38-14 50-31 4 17 15 29 34 36l5-33-31-36-55 1-31 27Z" fill="#303348"/>
+
+    <!-- headphones -->
+    <path d="M725 122c-1-36 24-62 57-62 34 0 59 25 59 62" fill="none" stroke="#70d6c9" stroke-width="8"/>
+    <rect x="714" y="118" width="20" height="44" rx="9" fill="#ef6f6c"/>
+    <rect x="834" y="118" width="20" height="44" rx="9" fill="#ef6f6c"/>
+
+    <!-- face -->
+    <path d="M751 143h10M807 143h10" stroke="#333548" stroke-width="5" stroke-linecap="round"/>
+    <path d="M778 158c5 5 10 5 15 0" fill="none" stroke="#b86f70" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="743" cy="157" rx="10" ry="5" fill="#ef8f91" opacity=".45"/>
+    <ellipse cx="824" cy="157" rx="10" ry="5" fill="#ef8f91" opacity=".45"/>
+
+    <!-- hoodie and typing pose -->
+    <path d="M744 194c20-12 60-12 81 1l21 52H722Z" fill="#4f5f86"/>
+    <path d="M770 192l12 18 13-18" fill="none" stroke="#f7f7fb" stroke-width="4"/>
+    <path d="M744 216l37 28M824 216l-34 28" fill="none" stroke="#f1c7ac" stroke-width="15" stroke-linecap="round"/>
+    <rect x="771" y="238" width="100" height="13" rx="5" fill="#252a3b" stroke="#59617c"/>
+  </g>
+
+  <!-- Floating game motifs -->
+  <g transform="translate(1080 164)">
+    <rect width="63" height="63" rx="11" fill="#252a3b" stroke="#59617c" stroke-width="3"/>
+    <path d="M17 22h29v19H17Z" fill="none" stroke="#f7f7fb" stroke-width="4"/>
+    <path d="M24 27v9M19.5 31.5h9M39 29h1M44 35h1" stroke="#70d6c9" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(637 76)">
+    <rect width="53" height="68" rx="6" fill="#f7f7fb" transform="rotate(-8 26 34)"/>
+    <path d="M23 24c0-9 14-9 14 0 0 9-7 13-7 13s-7-4-7-13Z" fill="#ef6f6c" transform="rotate(-8 26 34)"/>
+  </g>
+
+  <rect x="1.5" y="1.5" width="1197" height="317" rx="16.5" fill="none" stroke="#ffffff" stroke-opacity=".1" stroke-width="3"/>
+</svg>
