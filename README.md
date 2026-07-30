@@ -88,8 +88,8 @@
 ## `> player_stats`
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=itsVicOC&show_icons=true&hide_border=true&theme=tokyonight&rank_icon=github&locale=cn" alt="Vic's GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=itsVicOC&layout=compact&hide_border=true&theme=tokyonight&locale=cn" alt="Vic's most used languages" />
+  <img height="180" src="./assets/player-stats.png" alt="Vic's GitHub project stats" />
+  <img height="180" src="./assets/main-loadout.png" alt="Vic's primary programming languages" />
 </div>
 
 <div align="center">
