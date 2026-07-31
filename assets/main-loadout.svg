@@ -1,50 +1,44 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="495" height="180" viewBox="0 0 495 180" role="img" aria-labelledby="title desc">
-  <title id="title">Vic's primary programming languages</title>
-  <desc id="desc">TypeScript, JavaScript, Python, Swift, and Vue across original public projects</desc>
+  <title id="title">LIVE LOADOUT</title>
+  <desc id="desc">TypeScript: 10, JavaScript: 3, Python: 2, Swift: 1, Vue: 1</desc>
   <defs>
     <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#1a1b27"/>
-      <stop offset="1" stop-color="#27283d"/>
+      <stop offset="1" stop-color="#20333e"/>
     </linearGradient>
     <pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse">
       <path d="M22 0H0V22" fill="none" stroke="#ffffff" stroke-opacity=".025"/>
     </pattern>
+    <clipPath id="bar-clip"><rect x="24" y="67" width="447" height="14" rx="7"/></clipPath>
   </defs>
   <rect x="1" y="1" width="493" height="178" rx="8" fill="url(#panel)" stroke="#3b4057" stroke-width="2"/>
   <rect x="1" y="1" width="493" height="178" rx="8" fill="url(#grid)"/>
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">
-    <text x="24" y="34" fill="#70d6c9" font-size="15" font-weight="700" letter-spacing="2">MAIN LOADOUT</text>
+    <text x="24" y="34" fill="#70d6c9" font-size="15" font-weight="700" letter-spacing="2">LIVE LOADOUT</text>
     <text x="469" y="34" fill="#657089" font-size="12" text-anchor="end">original projects</text>
     <path d="M24 49H471" stroke="#3b4057"/>
-
-    <rect x="24" y="67" width="447" height="14" rx="7" fill="#30364a"/>
-    <path d="M31 67H282V81H31A7 7 0 0 1 24 74 7 7 0 0 1 31 67Z" fill="#3178c6"/>
-    <rect x="282" y="67" width="75" height="14" fill="#f1e05a"/>
-    <rect x="357" y="67" width="50" height="14" fill="#3572a5"/>
-    <rect x="407" y="67" width="26" height="14" fill="#f05138"/>
-    <path d="M433 67H464A7 7 0 0 1 471 74 7 7 0 0 1 464 81H433Z" fill="#41b883"/>
-
-    <g font-size="12">
-      <circle cx="30" cy="106" r="5" fill="#3178c6"/>
-      <text x="43" y="110" fill="#f7f7fb">TypeScript</text>
-      <text x="143" y="110" fill="#8d96ad">10 repos</text>
-
-      <circle cx="234" cy="106" r="5" fill="#f1e05a"/>
-      <text x="247" y="110" fill="#f7f7fb">JavaScript</text>
-      <text x="347" y="110" fill="#8d96ad">3 repos</text>
-
-      <circle cx="30" cy="137" r="5" fill="#3572a5"/>
-      <text x="43" y="141" fill="#f7f7fb">Python</text>
-      <text x="143" y="141" fill="#8d96ad">2 repos</text>
-
-      <circle cx="234" cy="137" r="5" fill="#f05138"/>
-      <text x="247" y="141" fill="#f7f7fb">Swift</text>
-      <text x="306" y="141" fill="#8d96ad">1</text>
-
-      <circle cx="365" cy="137" r="5" fill="#41b883"/>
-      <text x="378" y="141" fill="#f7f7fb">Vue</text>
-      <text x="419" y="141" fill="#8d96ad">1</text>
+    <g clip-path="url(#bar-clip)">
+      <rect x="24.00" y="67" width="262.94" height="14" fill="#3178c6"/>
+      <rect x="286.94" y="67" width="78.88" height="14" fill="#f1e05a"/>
+      <rect x="365.82" y="67" width="52.59" height="14" fill="#3572a5"/>
+      <rect x="418.41" y="67" width="26.29" height="14" fill="#f05138"/>
+      <rect x="444.71" y="67" width="26.29" height="14" fill="#41b883"/>
     </g>
-    <text x="24" y="163" fill="#657089" font-size="10">Counted from original public repositories</text>
+    <circle cx="30" cy="103" r="5" fill="#3178c6"/>
+    <text x="43" y="107" fill="#f7f7fb" font-size="12">TypeScript</text>
+    <text x="142" y="107" fill="#8d96ad" font-size="11">10</text>
+    <circle cx="185" cy="103" r="5" fill="#f1e05a"/>
+    <text x="198" y="107" fill="#f7f7fb" font-size="12">JavaScript</text>
+    <text x="297" y="107" fill="#8d96ad" font-size="11">3</text>
+    <circle cx="340" cy="103" r="5" fill="#3572a5"/>
+    <text x="353" y="107" fill="#f7f7fb" font-size="12">Python</text>
+    <text x="452" y="107" fill="#8d96ad" font-size="11">2</text>
+    <circle cx="30" cy="134" r="5" fill="#f05138"/>
+    <text x="43" y="138" fill="#f7f7fb" font-size="12">Swift</text>
+    <text x="142" y="138" fill="#8d96ad" font-size="11">1</text>
+    <circle cx="185" cy="134" r="5" fill="#41b883"/>
+    <text x="198" y="138" fill="#f7f7fb" font-size="12">Vue</text>
+    <text x="297" y="138" fill="#8d96ad" font-size="11">1</text>
+    <text x="24" y="163" fill="#657089" font-size="10">Primary language across original public repositories</text>
   </g>
 </svg>
