@@ -88,10 +88,8 @@
 ## `> player_stats`
 
 <div align="center">
-  <img height="180" src="./assets/player-stats.svg" alt="Vic's live GitHub project stats" />
-  <img height="180" src="./assets/main-loadout.svg" alt="Vic's live programming language distribution" />
-  <br />
-  <sub>每小时由 GitHub Actions 自动同步，仅在数据变化时提交。</sub>
+  <img width="49%" src="./assets/player-stats.svg" alt="Vic's live GitHub project stats" />
+  <img width="49%" src="./assets/main-loadout.svg" alt="Vic's live programming language distribution" />
 </div>
 
 <div align="center">
