@@ -133,9 +133,9 @@ def render_player_stats(username: str, public_count: int, original_count: int, l
       <text x="405" y="124" fill="#aab2c8" font-size="11" letter-spacing="1">MAIN LANGS</text>
     </g>
     <path d="M169 68V132M326 68V132" stroke="#3b4057"/>
-    <text x="24" y="157" fill="#657089" font-size="11">STATUS</text>
-    <circle cx="82" cy="153" r="4" fill="#70d6c9"/>
-    <text x="94" y="157" fill="#c9d1df" font-size="11">auto-synced from GitHub</text>'''
+    <text x="24" y="157" fill="#657089" font-size="11">PLAYSTYLE</text>
+    <circle cx="94" cy="153" r="4" fill="#70d6c9"/>
+    <text x="106" y="157" fill="#c9d1df" font-size="11">curious / practical / playful</text>'''
     description = (
         f"{username} has {public_count} public repositories, {original_count} original builds, "
         f"and {language_count} primary languages"
