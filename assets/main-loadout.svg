@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="495" height="180" viewBox="0 0 495 180" role="img" aria-labelledby="title desc">
   <title id="title">LIVE LOADOUT</title>
-  <desc id="desc">TypeScript: 12, JavaScript: 3, Rust: 2, Python: 2, HTML: 1, Swift: 1</desc>
+  <desc id="desc">TypeScript: 13, JavaScript: 3, Rust: 2, Python: 2, HTML: 1, Swift: 1</desc>
   <defs>
     <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#1a1b27"/>
@@ -18,16 +18,16 @@
     <text x="469" y="34" fill="#657089" font-size="12" text-anchor="end">original projects</text>
     <path d="M24 49H471" stroke="#3b4057"/>
     <g clip-path="url(#bar-clip)">
-      <rect x="24.00" y="67" width="255.43" height="14" fill="#3178c6"/>
-      <rect x="279.43" y="67" width="63.86" height="14" fill="#f1e05a"/>
-      <rect x="343.29" y="67" width="42.57" height="14" fill="#dea584"/>
-      <rect x="385.86" y="67" width="42.57" height="14" fill="#3572a5"/>
-      <rect x="428.43" y="67" width="21.29" height="14" fill="#e34c26"/>
-      <rect x="449.71" y="67" width="21.29" height="14" fill="#f05138"/>
+      <rect x="24.00" y="67" width="264.14" height="14" fill="#3178c6"/>
+      <rect x="288.14" y="67" width="60.95" height="14" fill="#f1e05a"/>
+      <rect x="349.09" y="67" width="40.64" height="14" fill="#dea584"/>
+      <rect x="389.73" y="67" width="40.64" height="14" fill="#3572a5"/>
+      <rect x="430.36" y="67" width="20.32" height="14" fill="#e34c26"/>
+      <rect x="450.68" y="67" width="20.32" height="14" fill="#f05138"/>
     </g>
     <circle cx="30" cy="103" r="5" fill="#3178c6"/>
     <text x="43" y="107" fill="#f7f7fb" font-size="12">TypeScript</text>
-    <text x="142" y="107" fill="#8d96ad" font-size="11">12</text>
+    <text x="142" y="107" fill="#8d96ad" font-size="11">13</text>
     <circle cx="185" cy="103" r="5" fill="#f1e05a"/>
     <text x="198" y="107" fill="#f7f7fb" font-size="12">JavaScript</text>
     <text x="297" y="107" fill="#8d96ad" font-size="11">3</text>

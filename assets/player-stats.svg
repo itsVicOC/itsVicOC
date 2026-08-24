@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="495" height="180" viewBox="0 0 495 180" role="img" aria-labelledby="title desc">
   <title id="title">LIVE PLAYER STATS</title>
-  <desc id="desc">itsVicOC has 37 public repositories, 22 original builds, and 7 primary languages</desc>
+  <desc id="desc">itsVicOC has 38 public repositories, 23 original builds, and 7 primary languages</desc>
   <defs>
     <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#1a1b27"/>
@@ -18,9 +18,9 @@
     <text x="469" y="34" fill="#657089" font-size="12" text-anchor="end">itsVicOC</text>
     <path d="M24 49H471" stroke="#3b4057"/>
     <g text-anchor="middle">
-      <text x="90" y="100" fill="#f7f7fb" font-size="36" font-weight="800">37</text>
+      <text x="90" y="100" fill="#f7f7fb" font-size="36" font-weight="800">38</text>
       <text x="90" y="124" fill="#aab2c8" font-size="11" letter-spacing="1">PUBLIC REPOS</text>
-      <text x="248" y="100" fill="#f4d35e" font-size="36" font-weight="800">22</text>
+      <text x="248" y="100" fill="#f4d35e" font-size="36" font-weight="800">23</text>
       <text x="248" y="124" fill="#aab2c8" font-size="11" letter-spacing="1">ORIGINAL BUILDS</text>
       <text x="405" y="100" fill="#ef8f91" font-size="36" font-weight="800">7</text>
       <text x="405" y="124" fill="#aab2c8" font-size="11" letter-spacing="1">MAIN LANGS</text>
