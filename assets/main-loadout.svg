@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="495" height="180" viewBox="0 0 495 180" role="img" aria-labelledby="title desc">
   <title id="title">LIVE LOADOUT</title>
-  <desc id="desc">TypeScript: 14, JavaScript: 3, Rust: 2, Python: 2, HTML: 1, Swift: 1</desc>
+  <desc id="desc">TypeScript: 14, JavaScript: 3, Python: 2, Rust: 2, HTML: 1, Swift: 1</desc>
   <defs>
     <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#1a1b27"/>
@@ -20,8 +20,8 @@
     <g clip-path="url(#bar-clip)">
       <rect x="24.00" y="67" width="272.09" height="14" fill="#3178c6"/>
       <rect x="296.09" y="67" width="58.30" height="14" fill="#f1e05a"/>
-      <rect x="354.39" y="67" width="38.87" height="14" fill="#dea584"/>
-      <rect x="393.26" y="67" width="38.87" height="14" fill="#3572a5"/>
+      <rect x="354.39" y="67" width="38.87" height="14" fill="#3572a5"/>
+      <rect x="393.26" y="67" width="38.87" height="14" fill="#dea584"/>
       <rect x="432.13" y="67" width="19.43" height="14" fill="#e34c26"/>
       <rect x="451.57" y="67" width="19.43" height="14" fill="#f05138"/>
     </g>
@@ -31,11 +31,11 @@
     <circle cx="185" cy="103" r="5" fill="#f1e05a"/>
     <text x="198" y="107" fill="#f7f7fb" font-size="12">JavaScript</text>
     <text x="297" y="107" fill="#8d96ad" font-size="11">3</text>
-    <circle cx="340" cy="103" r="5" fill="#dea584"/>
-    <text x="353" y="107" fill="#f7f7fb" font-size="12">Rust</text>
+    <circle cx="340" cy="103" r="5" fill="#3572a5"/>
+    <text x="353" y="107" fill="#f7f7fb" font-size="12">Python</text>
     <text x="452" y="107" fill="#8d96ad" font-size="11">2</text>
-    <circle cx="30" cy="134" r="5" fill="#3572a5"/>
-    <text x="43" y="138" fill="#f7f7fb" font-size="12">Python</text>
+    <circle cx="30" cy="134" r="5" fill="#dea584"/>
+    <text x="43" y="138" fill="#f7f7fb" font-size="12">Rust</text>
     <text x="142" y="138" fill="#8d96ad" font-size="11">2</text>
     <circle cx="185" cy="134" r="5" fill="#e34c26"/>
     <text x="198" y="138" fill="#f7f7fb" font-size="12">HTML</text>
