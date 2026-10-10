@@ -2,7 +2,7 @@ name: Update profile stats
 
 on:
   schedule:
-    - cron: "17 * * * *"
+    - cron: "17 2 * * *"
   workflow_dispatch:
   push:
     branches:
@@ -12,7 +12,7 @@ on:
       - .github/workflows/update-profile-stats.yml
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: profile-stats
@@ -20,6 +20,8 @@ concurrency:
 
 jobs:
   update:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -31,6 +33,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PROFILE_USERNAME: ${{ github.repository_owner }}
         run: python3 scripts/generate_profile_stats.py --username "$PROFILE_USERNAME"
+
+      - name: Validate generated cards
+        run: python3 scripts/check_profile.py
 
       - name: Commit changed cards
         run: |

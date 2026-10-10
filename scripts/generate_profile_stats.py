@@ -36,6 +36,7 @@ LANGUAGE_COLORS = {
     "Shell": "#89e051",
     "Dart": "#00b4ab",
     "Kotlin": "#a97bff",
+    "Other": "#8fa8cf",
 }
 
 FALLBACK_COLORS = (
@@ -94,7 +95,7 @@ def color_for_language(language: str, index: int) -> str:
 
 
 def shorten(value: str, limit: int = 13) -> str:
-    return value if len(value) <= limit else f"{value[: limit - 1]}..."
+    return value if len(value) <= limit else f"{value[: limit - 3]}..."
 
 
 def svg_shell(title: str, corner_label: str, body: str, description: str) -> str:
@@ -115,7 +116,7 @@ def svg_shell(title: str, corner_label: str, body: str, description: str) -> str
   <rect x="1" y="1" width="493" height="178" rx="8" fill="url(#grid)"/>
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">
     <text x="24" y="34" fill="#70d6c9" font-size="15" font-weight="700" letter-spacing="2">{escape(title)}</text>
-    <text x="469" y="34" fill="#657089" font-size="12" text-anchor="end">{escape(corner_label)}</text>
+    <text x="469" y="34" fill="#aab2c8" font-size="12" text-anchor="end">{escape(shorten(corner_label, 17))}</text>
     <path d="M24 49H471" stroke="#3b4057"/>
 {body}
   </g>
@@ -128,29 +129,35 @@ def render_player_stats(username: str, public_count: int, original_count: int, l
       <text x="90" y="100" fill="#f7f7fb" font-size="36" font-weight="800">{public_count}</text>
       <text x="90" y="124" fill="#aab2c8" font-size="11" letter-spacing="1">PUBLIC REPOS</text>
       <text x="248" y="100" fill="#f4d35e" font-size="36" font-weight="800">{original_count}</text>
-      <text x="248" y="124" fill="#aab2c8" font-size="11" letter-spacing="1">ORIGINAL BUILDS</text>
+      <text x="248" y="124" fill="#aab2c8" font-size="11" letter-spacing="1">OWN REPOS</text>
       <text x="405" y="100" fill="#ef8f91" font-size="36" font-weight="800">{language_count}</text>
       <text x="405" y="124" fill="#aab2c8" font-size="11" letter-spacing="1">MAIN LANGS</text>
     </g>
     <path d="M169 68V132M326 68V132" stroke="#3b4057"/>
-    <text x="24" y="157" fill="#657089" font-size="11">PLAYSTYLE</text>
+    <text x="24" y="157" fill="#aab2c8" font-size="11">PLAYSTYLE</text>
     <circle cx="94" cy="153" r="4" fill="#70d6c9"/>
     <text x="106" y="157" fill="#c9d1df" font-size="11">curious / practical / playful</text>'''
     description = (
-        f"{username} has {public_count} public repositories, {original_count} original builds, "
-        f"and {language_count} primary languages"
+        f"{username} has {public_count} public repositories, {original_count} non-fork public "
+        f"repositories excluding this profile, and {language_count} primary languages"
     )
-    return svg_shell("LIVE PLAYER STATS", username, body, description)
+    return svg_shell("PROJECT STATS", username, body, description)
 
 
 def render_languages(language_counts: Counter[str]) -> str:
-    top_languages = language_counts.most_common(6)
-    total = sum(count for _, count in top_languages)
+    all_languages = sorted(
+        ((language, count) for language, count in language_counts.items() if count > 0),
+        key=lambda item: (-item[1], item[0].casefold()),
+    )
+    top_languages = all_languages[:6]
+    if len(all_languages) > 6:
+        top_languages = all_languages[:5] + [("Other", sum(count for _, count in all_languages[5:]))]
+    total = sum(count for _, count in all_languages)
 
     if not top_languages:
         body = '''    <text x="247" y="105" text-anchor="middle" fill="#aab2c8" font-size="13">No language data yet</text>
-    <text x="24" y="163" fill="#657089" font-size="10">Primary language across original public repositories</text>'''
-        return svg_shell("LIVE LOADOUT", "original projects", body, "No language data available")
+    <text x="24" y="163" fill="#aab2c8" font-size="10">By repository count / non-fork public repositories</text>'''
+        return svg_shell("LANGUAGE MIX", "by repo count", body, "No language data available")
 
     bar_parts = ['    <g clip-path="url(#bar-clip)">']
     current_x = 24.0
@@ -184,11 +191,11 @@ def render_languages(language_counts: Counter[str]) -> str:
         bar_parts
         + legend_parts
         + [
-            '    <text x="24" y="163" fill="#657089" font-size="10">Primary language across original public repositories</text>'
+            '    <text x="24" y="163" fill="#aab2c8" font-size="10">By repository count / non-fork public repositories</text>'
         ]
     )
-    summary = ", ".join(f"{language}: {count}" for language, count in top_languages)
-    return svg_shell("LIVE LOADOUT", "original projects", body, summary)
+    summary = ", ".join(f"{language}: {count}" for language, count in all_languages)
+    return svg_shell("LANGUAGE MIX", "by repo count", body, summary)
 
 
 def write_if_changed(path: Path, content: str) -> None:
