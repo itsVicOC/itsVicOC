@@ -14,16 +14,16 @@
   <rect x="1" y="1" width="493" height="178" rx="8" fill="url(#panel)" stroke="#3b4057" stroke-width="2"/>
   <rect x="1" y="1" width="493" height="178" rx="8" fill="url(#grid)"/>
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">
-    <text x="24" y="34" fill="#70d6c9" font-size="15" font-weight="700" letter-spacing="2">PROJECT STATS</text>
+    <text x="24" y="34" fill="#70d6c9" font-size="18" font-weight="700" letter-spacing="2">PROJECT STATS</text>
     <text x="469" y="34" fill="#aab2c8" font-size="12" text-anchor="end">itsVicOC</text>
     <path d="M24 49H471" stroke="#3b4057"/>
     <g text-anchor="middle">
       <text x="90" y="100" fill="#f7f7fb" font-size="36" font-weight="800">39</text>
-      <text x="90" y="124" fill="#aab2c8" font-size="11" letter-spacing="1">PUBLIC REPOS</text>
+      <text x="90" y="124" fill="#aab2c8" font-size="18">PUBLIC REPOS</text>
       <text x="248" y="100" fill="#f4d35e" font-size="36" font-weight="800">24</text>
-      <text x="248" y="124" fill="#aab2c8" font-size="11" letter-spacing="1">OWN REPOS</text>
+      <text x="248" y="124" fill="#aab2c8" font-size="18">OWN REPOS</text>
       <text x="405" y="100" fill="#ef8f91" font-size="36" font-weight="800">7</text>
-      <text x="405" y="124" fill="#aab2c8" font-size="11" letter-spacing="1">MAIN LANGS</text>
+      <text x="405" y="124" fill="#aab2c8" font-size="18">MAIN LANGS</text>
     </g>
     <path d="M169 68V132M326 68V132" stroke="#3b4057"/>
     <text x="24" y="157" fill="#aab2c8" font-size="11">PLAYSTYLE</text>
